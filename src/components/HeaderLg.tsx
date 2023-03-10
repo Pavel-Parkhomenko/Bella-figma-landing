@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Button, Col, Grid, Row, Typography } from "antd";
+import HeaderMobile from "./HeaderMobile";
 
 const { useBreakpoint } = Grid;
 const { Text } = Typography;
@@ -45,6 +46,9 @@ interface DesktopHeaderLightProps {}
 
 const HeaderLg: React.FC<DesktopHeaderLightProps> = () => {
   const { xs, sm, md } = useBreakpoint();
+  if ((!md && sm) || xs) {
+    return <HeaderMobile />;
+  }
   return (
     <>
       <Row style={{ height: 156 }}>

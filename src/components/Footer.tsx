@@ -7,6 +7,7 @@ import {
   TwitterOutlined,
 } from "@ant-design/icons";
 import useBreakpoint from "antd/lib/grid/hooks/useBreakpoint";
+import FooterMobile from "./FooterMobile";
 
 const { Title, Text } = Typography;
 
@@ -38,7 +39,9 @@ const OutLinedButton = styled(Button)`
 
 const Footer = () => {
   const { xs, sm, md } = useBreakpoint();
-  
+  if ((!md && sm) || xs) {
+    return <FooterMobile />;
+  }
   return (
     <>
       <Row
