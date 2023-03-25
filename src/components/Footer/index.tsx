@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row, Typography } from "antd";
+import {Col, Row, Typography} from "antd";
 import {
   FacebookFilled,
   InstagramFilled,
@@ -7,19 +7,17 @@ import {
 } from "@ant-design/icons";
 import useBreakpoint from "antd/lib/grid/hooks/useBreakpoint";
 import {
-    OutLinedButton,
-    OrangeButton
+  OutLinedButton,
+  OrangeButton
 } from './styled'
 import FooterMobile from "../FooterMobile";
 
-const { Title, Text } = Typography;
-
-
+const {Title, Text} = Typography;
 
 const Footer = () => {
-  const { xs, sm, md } = useBreakpoint();
+  const {xs, sm, md} = useBreakpoint();
   if ((!md && sm) || xs) {
-    return <FooterMobile />;
+    return <FooterMobile/>;
   }
   return (
     <>
@@ -33,7 +31,7 @@ const Footer = () => {
           backgroundSize: "cover",
         }}
       >
-        <Col span={24} style={{ textAlign: "center", marginTop: 130 }}>
+        <Col span={24} style={{textAlign: "center", marginTop: 130}}>
           <Title
             level={2}
             style={{
@@ -47,7 +45,7 @@ const Footer = () => {
             Download the app now.
           </Title>
         </Col>
-        <Col span={24} style={{ textAlign: "center" }}>
+        <Col span={24} style={{textAlign: "center"}}>
           <Title
             level={4}
             style={{
@@ -61,11 +59,11 @@ const Footer = () => {
             Available on your favorite store. Start your premium experience now
           </Title>
         </Col>
-        <Col span={24} style={{ marginBottom: "130px", marginTop: "50px" }}>
+        <Col span={24} style={{marginBottom: "130px", marginTop: "50px"}}>
           <Row
             justify={"space-around"}
             align={"middle"}
-            style={{ width: 332, margin: "auto" }}
+            style={{width: 332, margin: "auto"}}
           >
             <Col>
               <OrangeButton>Playstore</OrangeButton>
@@ -77,31 +75,31 @@ const Footer = () => {
         </Col>
       </Row>
       <Row>
-        <Col span={24} style={{ padding: `0 115px` }}>
+        <Col span={24} style={{padding: `0 115px`}}>
           <Row align={"middle"} justify={"center"}>
             <Col span={8}>
               {" "}
-              <img src="images/Bella Olonje logo 111 1.png" alt="" />
+              <img src="images/Bella Olonje logo 111 1.png" alt=""/>
             </Col>
 
             <Col span={8}>
               <Row
                 align={"middle"}
                 justify={"space-around"}
-                style={{ width: 171, margin: "auto" }}
+                style={{width: 171, margin: "auto"}}
               >
-                <TwitterOutlined
-                  style={{ fontSize: "33px", color: "#FA4A0C" }}
-                />
-                <FacebookFilled
-                  style={{ fontSize: "33px", color: "#FA4A0C" }}
-                />
-                <InstagramFilled
-                  style={{ fontSize: "33px", color: "#FA4A0C" }}
-                />
+                <div style={{fontSize: "33px", color: "#FA4A0C"}}>
+                  <TwitterOutlined/>
+                </div>
+                <div style={{fontSize: "33px", color: "#FA4A0C"}}>
+                  <FacebookFilled/>
+                </div>
+                <div style={{fontSize: "33px", color: "#FA4A0C"}}>
+                  <InstagramFilled />
+                </div>
               </Row>
             </Col>
-            <Col span={8} style={{ textAlign: "right" }}>
+            <Col span={8} style={{textAlign: "right"}}>
               <Text>Copywright 2020 Bella Onojie.com</Text>
             </Col>
           </Row>

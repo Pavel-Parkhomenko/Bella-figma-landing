@@ -1,14 +1,12 @@
 import React, { useState } from "react";
-import { Button, Col, Drawer, Row, Typography } from "antd";
+import { Button, Col, Drawer, Row } from "antd";
 import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
 import {
   StyledText,
   OutLinedButton,
   OrangeButton
 } from "./styled";
-
 interface HeaderMobileLightProps {}
-
 const HeaderMobile: React.FC<HeaderMobileLightProps> = () => {
   const [visible, setVisible] = useState(false);
   const showDrawer = () => {

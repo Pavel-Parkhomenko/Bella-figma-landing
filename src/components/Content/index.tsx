@@ -173,4 +173,4 @@ const Content = () => {
   );
 };
 
-export default Index;
+export default Content;
