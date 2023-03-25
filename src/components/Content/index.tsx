@@ -1,14 +1,14 @@
 import React from "react";
 import { Col, Divider, Image, Row, Typography } from "antd";
 import useBreakpoint from "antd/lib/grid/hooks/useBreakpoint";
-import ContentMobile from "./ContentMobile";
+import Index from "../ContentMobile";
 
 const { Title } = Typography;
 
 const Content = () => {
   const { xs, sm, md } = useBreakpoint();
   if ((!md && sm) || xs) {
-    return <ContentMobile />;
+    return <Index />;
   }
   return (
     <>
@@ -173,4 +173,4 @@ const Content = () => {
   );
 };
 
-export default Content;
+export default Index;

@@ -177,4 +177,4 @@ const ContentMobile = () => {
   );
 };
 
-export default ContentMobile;
+export default Index;

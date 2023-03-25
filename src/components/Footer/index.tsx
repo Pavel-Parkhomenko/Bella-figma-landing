@@ -1,41 +1,20 @@
 import React from "react";
-import styled from "styled-components";
-import { Button, Col, Row, Typography } from "antd";
+import { Col, Row, Typography } from "antd";
 import {
   FacebookFilled,
   InstagramFilled,
   TwitterOutlined,
 } from "@ant-design/icons";
 import useBreakpoint from "antd/lib/grid/hooks/useBreakpoint";
-import FooterMobile from "./FooterMobile";
+import {
+    OutLinedButton,
+    OrangeButton
+} from './styled'
+import FooterMobile from "../FooterMobile";
 
 const { Title, Text } = Typography;
 
-const OrangeButton = styled(Button)`
-  height: 64px;
-  width: 142px;
-  background-color: #fa4a0c !important;
-  border-color: #fa4a0c !important;
-  outline: none;
-  color: white !important;
-  font-weight: 700;
-  line-height: 28px;
-  font-size: 16px;
-  border-radius: 10px;
-`;
 
-const OutLinedButton = styled(Button)`
-  height: 64px;
-  width: 142px;
-  background-color: transparent !important;
-  border-color: white !important;
-  outline: none !important;
-  color: white !important;
-  font-weight: 700;
-  line-height: 28px;
-  font-size: 16px;
-  border-radius: 10px;
-`;
 
 const Footer = () => {
   const { xs, sm, md } = useBreakpoint();

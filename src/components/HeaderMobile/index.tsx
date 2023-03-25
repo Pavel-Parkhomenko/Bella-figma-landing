@@ -1,46 +1,11 @@
 import React, { useState } from "react";
-import styled from "styled-components";
 import { Button, Col, Drawer, Row, Typography } from "antd";
 import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
-
-const { Text } = Typography;
-
-const StyledText = styled(Text)`
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 28px;
-  letter-spacing: 0.20000000298023224px;
-  text-align: center;
-  color: #fa4a0c;
-  &:hover {
-    color: orange;
-  }
-`;
-
-const OrangeButton = styled(Button)`
-  height: 68px;
-  width: 236px;
-  background-color: #fa4a0c !important;
-  border-color: #fa4a0c !important;
-  outline: none;
-  color: white !important;
-  font-weight: 700;
-  line-height: 36px;
-  font-size: 24px;
-`;
-
-const OutLinedButton = styled(Button)`
-  height: 68px;
-  width: 236px;
-  background-color: transparent !important;
-  border-color: #fa4a0c !important;
-  outline: none !important;
-  color: #fa4a0c !important;
-  font-weight: 700;
-  line-height: 36px;
-  font-size: 24px;
-`;
+import {
+  StyledText,
+  OutLinedButton,
+  OrangeButton
+} from "./styled";
 
 interface HeaderMobileLightProps {}
 
