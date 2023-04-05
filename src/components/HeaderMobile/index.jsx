@@ -6,8 +6,8 @@ import {
   OutLinedButton,
   OrangeButton
 } from "./styled";
-interface HeaderMobileLightProps {}
-const HeaderMobile: React.FC<HeaderMobileLightProps> = () => {
+
+const HeaderMobile = () => {
   const [visible, setVisible] = useState(false);
   const showDrawer = () => {
     setVisible(true);

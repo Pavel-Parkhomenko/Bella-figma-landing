@@ -8,9 +8,7 @@ import {
 } from "./styled"
 const { useBreakpoint } = Grid;
 
-interface DesktopHeaderLightProps {}
-
-const HeaderLg: React.FC<DesktopHeaderLightProps> = () => {
+const HeaderLg = () => {
   const { xs, sm, md } = useBreakpoint();
   if ((!md && sm) || xs) {
     return <HeaderMobile />;

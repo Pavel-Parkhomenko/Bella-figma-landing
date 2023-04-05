@@ -14,7 +14,7 @@ import FooterMobile from "../FooterMobile";
 
 const {Title, Text} = Typography;
 
-const Footer = () => {
+export const Footer = () => {
   const {xs, sm, md} = useBreakpoint();
   if ((!md && sm) || xs) {
     return <FooterMobile/>;
@@ -108,5 +108,3 @@ const Footer = () => {
     </>
   );
 };
-
-export default Footer;
